@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function getcube(){
+            var n=document.getElementById("number").value;
+            alert(n*n*n);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Enter No:<input type="text" id="number" name="number"/><br>
+        <input type="button" value="cube" onclick="getcube()"/>
+    </form>
+</body>
+</html>

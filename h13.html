@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: right;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        th:first-child, td:first-child {
+            text-align: left;
+        }
+        .no-border {
+            border: none;
+        }
+        .total-row {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h4>Invoice</h4>
+
+<table>
+    <tr>
+        <th>Item / Desc.</th>
+        <th>Qty.</th>
+        <th>@</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>Paperclips (Box)</td>
+        <td>100</td>
+        <td>1.15</td>
+        <td>115.00</td>
+    </tr>
+    <tr>
+        <td>Paper (Case)</td>
+        <td>10</td>
+        <td>45.99</td>
+        <td>459.90</td>
+    </tr>
+    <tr>
+        <td>Wastepaper Baskets</td>
+        <td>2</td>
+        <td>17.99</td>
+        <td>35.98</td>
+    </tr>
+    <tr>
+        <td colspan="3" class="no-border total-row">Subtotal</td>
+        <td>610.88</td>
+    </tr>
+    <tr>
+        <td colspan="2" class="no-border"></td>
+        <td>Tax</td>
+        <td>7%</td>
+    </tr>
+    <tr>
+        <td colspan="3" class="no-border"></td>
+        <td>42.76</td>
+    </tr>
+    <tr>
+        <td colspan="3" class="no-border total-row">Total</td>
+        <td>653.64</td>
+    </tr>
+</table>
+
+</body>
+</html>

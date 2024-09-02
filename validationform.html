@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sample Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Sample Project</h1>
+        <div class="form-container">
+            <form action="submit.php" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Add Record</legend>
+
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address"></textarea>
+
+                    <label for="qualification">Last Educational Qualification:</label>
+                    <select id="qualification" name="qualification">
+                        <option value="">- Select Degree -</option>
+                        <option value="High School">High School</option>
+                        <option value="Bachelor's">Bachelor's</option>
+                        <option value="Master's">Master's</option>
+                        <option value="PhD">PhD</option>
+                    </select>
+
+                    <label for="photo">Photograph:</label>
+                    <input type="file" id="photo" name="photo">
+
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter"> Subscribe to newsletter
+                    </label>
+
+                    <div class="buttons">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Cancel</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

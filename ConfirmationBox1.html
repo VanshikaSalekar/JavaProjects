@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Confirmation Dialog Box Example</title>
+</head>
+<body>
+
+    <h1>Multiplication Confirmation Dialog Box Example</h1>
+
+    <button onclick="confirmMultiplication()">Multiply Numbers</button>
+
+    <script>
+        function confirmMultiplication() {
+            let number1 = prompt("Enter the first number:");
+            let number2 = prompt("Enter the second number:");
+            
+            if (number1 !== null && number2 !== null) {
+                number1 = parseFloat(number1);
+                number2 = parseFloat(number2);
+                
+                if (isNaN(number1) || isNaN(number2)) {
+                    alert("Please enter valid numbers.");
+                    return;
+                }
+                
+                let confirmAction = confirm(`Do you want to multiply ${number1} and ${number2}?`);
+                
+                if (confirmAction) {
+                    let result = number1 * number2;
+                    alert(`The result of multiplying ${number1} and ${number2} is ${result}.`);
+                } else {
+                    alert("Multiplication canceled.");
+                }
+            } else {
+                alert("Operation canceled.");
+            }
+        }
+    </script>
+
+</body>
+</html>

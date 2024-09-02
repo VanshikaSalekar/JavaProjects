@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkHobbies() {
+            var count = 0;            
+            if (document.getElementById("Dance").checked) {
+                count++;
+            }
+            if (document.getElementById("Singing").checked) {
+                count++;
+            }
+            if (document.getElementById("Painting").checked) {
+                count++;
+            }
+            if (count > 0) {
+                alert("You have selected " + count + " hobbies.");
+            } else {
+                alert("You haven't selected any hobbies.");
+            }
+        }
+    </script>
+</head>
+<body style="text-align: center;">
+    <h1>Check Selected Radio Button Value Using JavaScript.</h1>
+        <b>Choose Hobbies:</b><br><br>
+        <input type="checkbox" id="Dance" value="Dance">Dance</input><br>
+        <input type="checkbox" id="Singing" value="Singing">Singing</input><br>
+        <input type="checkbox" id="Painting" value="Painting">Painting</input><br>        
+        <br><br>
+        <input type="button" value="Check Hobbies" onclick="checkHobbies()"/>
+</body>
+</html>
